@@ -9,7 +9,7 @@ trait InteractsWithQueue
     /**
      * The underlying queue job instance.
      *
-     * @var \Illuminate\Contracts\Queue\Job|null
+     * @var \Illuminate\Contracts\Queue\Job
      */
     public $job;
 
@@ -49,7 +49,7 @@ trait InteractsWithQueue
     }
 
     /**
-     * Release the job back into the queue after (n) seconds.
+     * Release the job back into the queue.
      *
      * @param  int  $delay
      * @return void
